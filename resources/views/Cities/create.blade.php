@@ -3,6 +3,21 @@
 @section('title', 'Tambah Kota')
 
 @section('content')
+
+
+<div class="card mb-3"><div class="container px-lg-5">
+
+<div class="row justify-content-md-center">
+    <div class="col-8"> 
+    </div>
+
+<div class="card-body">
+    <h5 class="card-title">Tambah Kota</h5>
+    <p class="card-text">Tambahkan daerah cakupan Kota anda disini.</p>
+  </div>
+</div>
+
+
   <form action="/cities" method="POST">
     @csrf
    

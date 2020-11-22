@@ -3,6 +3,7 @@
 @section('title', 'Daftar Kota')
 
 @section('content')
+
 <div class="card">
     <div class="card-body">
         <h3>Nama teman : {{ $cities['namakota'] }} </h3>

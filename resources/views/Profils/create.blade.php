@@ -3,6 +3,20 @@
 @section('title', 'profils')
 
 @section('content')
+
+
+<div class="card mb-3"><div class="container px-lg-5">
+
+<div class="row justify-content-md-center">
+    <div class="col-8"> 
+    </div>
+
+<div class="card-body">
+    <h5 class="card-title">Tambah Toko</h5>
+    <p class="card-text">Tambahkan Toko anda pada Toko Bangunan Online ini.</p>
+  </div>
+</div>
+<hr>
   <form action="/profils" method="POST">
     @csrf
    
@@ -28,6 +42,14 @@
     <div class="alert alert-danger">{{ $message }}</div>
 @enderror
     </div>
+
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Id Kota</label>
+      <input type="integer" class="form-control" name="cities_id" id="exampleInputPassword1" value="{{ old('cities_id') }}">
+      @error('cities_id')
+    <div class="alert alert-danger">{{ $message }}</div>
+@enderror
 
     </div>
 

@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\CitiesController;
 use App\Http\Controllers\ProfilsController;
+use App\Http\Controllers\MainController;
+use App\Http\Controllers\InfosController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,4 +23,8 @@ Route::get('', [ProfilsController::class, 'index']);
 Route::resources([
     'profils' => ProfilsController::class,
     'cities' => CitiesController::class,
+    'homes' => MainController::class,
+    'infos' => InfosController::class,
+
+
 ]);

@@ -3,7 +3,12 @@
 @section('title', 'Edit Kota')
 
 @section('content')
-
+<div class="card">
+  <h5 class="card-header">Form Edit</h5>
+  <div class="card-body">
+    <h5 class="card-title">Edit Kota </h5>
+    <hr>
+    
   <form action="/cities/{{ $city['id'] }}" method="POST">
     @csrf
     @method('PUT')
@@ -25,6 +30,7 @@
 
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
-
+</div>
+</div>
 
 @endsection
